@@ -25,10 +25,27 @@ summonCaptainPlanet(planeteerCalls);
 
 
 function longPlaneteerCalls(words) {
-  words.some(longPlaneteerCalls);
-function longPlaneteerCalls(items){
- return items.length > 4;
+  var longWord = false;
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length > 4) {
+      longWord = true;
+    }
+  }
+  return longWord;
 }	
+
+function findTheCheese (foods) {
+	var cheeses = ["cheddar", "gouda", "camembert"];
+	for (var i = 0; i < foods.length; i++) {
+		for (var a = 0; a < cheeses.length; a++) {
+			if ( cheeses[a]=== foods[i] ) {
+				return foods[i]; 
+			}
+		}
+	}
+	return "no cheese!";
 }
+
+
 
 
