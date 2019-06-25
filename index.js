@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 
 dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"];
@@ -10,12 +11,17 @@ function dwarfRollCall(dwarves) {
   var dwarveCount = '';
   
   
+=======
+  function dwarfRollCall(dwarves) {
+  var dwarveCount = '';
+>>>>>>> c809b54bed7c8eb79363b0ce342e1de4cb363d10
   for(let i = 0; i < dwarves.length; i++) {
     dwarveCount += `${i + 1}. ${dwarves[i]} `
   }
   return dwarveCount;
 }
 
+<<<<<<< HEAD
 function summonCaptainPlanet(array){
   return array.map(function(item){
 		return item.toUpperCase() + "!";
@@ -23,6 +29,16 @@ function summonCaptainPlanet(array){
 }	
 summonCaptainPlanet(planeteerCalls);
 
+=======
+ var planeteerCalls = ['earth', 'wind', 'fire', 'water', 'heart']
+function summonCaptainPlanet(planeteerCalls){
+ 
+ for (let i = 0; i < planeteerCalls.length; i++) {
+planeteerCalls[i] = planeteerCalls[i].toUpperCase();
+} 
+return summonCaptainPlanet;
+}
+>>>>>>> c809b54bed7c8eb79363b0ce342e1de4cb363d10
 
 function longPlaneteerCalls(words) {
   var longWord = false;
